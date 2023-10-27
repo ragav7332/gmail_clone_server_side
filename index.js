@@ -44,7 +44,7 @@ app.use('/api/v1/account', accountRoutes);
 app.use('/api/v1/email', emailRoutes);
 
 // server is listening for requests
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
   console.log(`✅ Server is listening on port: ${PORT}`);
   
